@@ -119,7 +119,7 @@ public class BottomSheetController: UIViewController {
     }
 
     /// Close sheet programmatically.
-    func close(completion: (() -> Void)? = nil) {
+    public func close(completion: (() -> Void)? = nil) {
         sheetHeight = sheet.frame.height
         closeSheet(animated: true) { _ in
             self.dismiss(animated: true)
